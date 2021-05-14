@@ -1,0 +1,190 @@
+EESchema Schematic File Version 4
+LIBS:experiment-tools-valve-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 5250 3850
+NoConn ~ 5250 3950
+NoConn ~ 5250 4050
+NoConn ~ 5250 4150
+NoConn ~ 5250 4250
+$Comp
+L power:+12V #PWR?
+U 1 1 609E0C7F
+P 2850 2700
+F 0 "#PWR?" H 2850 2550 50  0001 C CNN
+F 1 "+12V" H 2865 2873 50  0000 C CNN
+F 2 "" H 2850 2700 50  0001 C CNN
+F 3 "" H 2850 2700 50  0001 C CNN
+	1    2850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609E1151
+P 3650 2700
+F 0 "#PWR?" H 3650 2450 50  0001 C CNN
+F 1 "GND" H 3655 2527 50  0000 C CNN
+F 2 "" H 3650 2700 50  0001 C CNN
+F 3 "" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 609E1A3E
+P 3650 2700
+F 0 "#FLG?" H 3650 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3650 2873 50  0000 C CNN
+F 2 "" H 3650 2700 50  0001 C CNN
+F 3 "~" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 609E1EEF
+P 3200 2700
+F 0 "#FLG?" H 3200 2775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3200 2873 50  0000 C CNN
+F 2 "" H 3200 2700 50  0001 C CNN
+F 3 "~" H 3200 2700 50  0001 C CNN
+	1    3200 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2700 2850 2750
+Wire Wire Line
+	2850 2750 3200 2750
+Wire Wire Line
+	3200 2750 3200 2700
+NoConn ~ 4750 3550
+$Comp
+L Relay_SolidState:TLP222A U2
+U 1 1 609E46E5
+P 6400 4050
+F 0 "U2" H 6400 4375 50  0000 C CNN
+F 1 "TLP222A" H 6400 4284 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6200 3850 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=17036&prodName=TLP222A" H 6350 4050 50  0001 L CNN
+	1    6400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 609E3E57
+P 4550 3550
+F 0 "#PWR?" H 4550 3400 50  0001 C CNN
+F 1 "+12V" H 4565 3723 50  0000 C CNN
+F 2 "" H 4550 3550 50  0001 C CNN
+F 3 "" H 4550 3550 50  0001 C CNN
+	1    4550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609E377D
+P 4650 4600
+F 0 "#PWR?" H 4650 4350 50  0001 C CNN
+F 1 "GND" H 4655 4427 50  0000 C CNN
+F 2 "" H 4650 4600 50  0001 C CNN
+F 3 "" H 4650 4600 50  0001 C CNN
+	1    4650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Digispark:Digispark_Attiny85 U1
+U 1 1 609DE77D
+P 4650 4350
+F 0 "U1" H 4170 4671 50  0000 R CNN
+F 1 "Digispark_Attiny85" H 4170 4580 50  0000 R CNN
+F 2 "" H 4850 4950 50  0001 C CNN
+F 3 "https://www.amazon.co.jp/HiLetgo%C2%AE-3%E5%80%8B%E3%82%BB%E3%83%83%E3%83%88Digispark-Kickstarter-Attiny85-Arduino/dp/B01N0C5PTJ/ref=sr_1_4?dchild=1&keywords=digispark+attiny85&qid=1620959273&s=industrial&sr=1-4" H 4950 5050 50  0001 C CNN
+	1    4650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 609DFE06
+P 5950 3950
+F 0 "R1" V 6157 3950 50  0000 C CNN
+F 1 "R300" V 6066 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5880 3950 50  0001 C CNN
+F 3 "~" H 5950 3950 50  0001 C CNN
+	1    5950 3950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5250 4350 5550 4350
+Wire Wire Line
+	5550 4350 5550 3950
+Wire Wire Line
+	5550 3950 5800 3950
+$Comp
+L power:GND #PWR?
+U 1 1 60A0679D
+P 6100 4150
+F 0 "#PWR?" H 6100 3900 50  0001 C CNN
+F 1 "GND" H 6105 3977 50  0000 C CNN
+F 2 "" H 6100 4150 50  0001 C CNN
+F 3 "" H 6100 4150 50  0001 C CNN
+	1    6100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L solenoid-valve:Solenoid-Valve-12V K1
+U 1 1 60A0A201
+P 7800 4050
+F 0 "K1" H 7370 4096 50  0000 R CNN
+F 1 "Solenoid-Valve-12V" H 7370 4005 50  0000 R CNN
+F 2 "" H 8150 4000 50  0001 L CNN
+F 3 "https://www.amazon.co.jp/%E9%9B%BB%E7%A3%81%E5%BC%81-%E9%9B%BB%E6%B0%97%E3%82%BD%E3%83%AC%E3%83%8E%E3%82%A4%E3%83%89%E3%83%90%E3%83%AB%E3%83%96-NC%E3%83%97%E3%83%A9%E3%82%B9%E3%83%81%E3%83%83%E3%82%AF-%E9%9B%BB%E6%B0%97%E7%B5%A6%E6%B0%B4%E3%82%BD%E3%83%AC%E3%83%8E%E3%82%A4%E3%83%89-%E6%B0%B4%E3%83%90%E3%83%AB%E3%83%96/dp/B07KR33BWG/ref=pd_rhf_ee_p_img_2?_encoding=UTF8&psc=1&refRID=NRXJXH4ZCKNZ7E0P773J" H 7800 4050 50  0001 C CNN
+	1    7800 4050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3700 7600 3750
+$Comp
+L power:GND #PWR?
+U 1 1 60A17D93
+P 7600 4350
+F 0 "#PWR?" H 7600 4100 50  0001 C CNN
+F 1 "GND" H 7605 4177 50  0000 C CNN
+F 2 "" H 7600 4350 50  0001 C CNN
+F 3 "" H 7600 4350 50  0001 C CNN
+	1    7600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 60A186C3
+P 6750 3900
+F 0 "#PWR?" H 6750 3750 50  0001 C CNN
+F 1 "+12V" H 6765 4073 50  0000 C CNN
+F 2 "" H 6750 3900 50  0001 C CNN
+F 3 "" H 6750 3900 50  0001 C CNN
+	1    6750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3950 6750 3950
+Wire Wire Line
+	6750 3950 6750 3900
+Wire Wire Line
+	6700 4150 7100 4150
+Wire Wire Line
+	7100 4150 7100 3700
+Wire Wire Line
+	7100 3700 7600 3700
+$EndSCHEMATC
