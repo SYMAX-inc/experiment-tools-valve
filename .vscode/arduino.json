@@ -1,0 +1,5 @@
+{
+    "board": "digispark:avr:digispark-clone",
+    "programmer": "digispark:micronucleusprog",
+    "sketch": "experiment-tools-valve.ino"
+}

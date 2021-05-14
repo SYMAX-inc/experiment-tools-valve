@@ -1,6 +1,11 @@
 {
-  "editor.rulers": [
-    80
-  ],
-  "git.ignoreLimitWarning": true
+    "editor.rulers": [
+        80
+    ],
+    "arduino.additionalUrls": [
+        "https://kimio-kosaka.github.io/digispark-clone/package_digispark-clone_index.json"
+    ],
+    "arduino.commandPath": "Contents/MacOS/Arduino",
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "git.ignoreLimitWarning": true
 }
