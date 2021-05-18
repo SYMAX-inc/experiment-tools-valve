@@ -3,7 +3,7 @@
 // Parameters can be changed by user
 namespace {
 constexpr uint32_t seconds_to_open_valve = 10;
-constexpr uint32_t seconds_to_close_valve = 20;
+constexpr uint32_t seconds_to_close_valve = 30 * 60;
 };
 
 // Parameters should NOT be changed
